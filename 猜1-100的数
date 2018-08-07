@@ -1,0 +1,40 @@
+//猜1-100的数
+package my;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class Hello
+{
+	public static void main(String[] args){
+		
+	 Scanner reader=new Scanner(System.in);
+	 Random random =new Random();
+	 System.out.println("猜1-100的数");
+	 int realNumber= random.nextInt(100)+1;
+	int youguess;
+	youguess=reader.nextInt();
+	 while(youguess !=realNumber) 
+	 {
+		 
+		 
+		 if(youguess>realNumber)
+		 {
+			 System.out.println("大了，再来");
+			 youguess=reader.nextInt();
+			 
+			 
+			 
+		 }
+		 else if(youguess<realNumber)
+		 {
+			 System.out.println("小了，再来");
+			 youguess=reader.nextInt();
+			 
+		 }
+			 
+		 }
+		 
+		 
+		 System.out.println("对了");
+		 
